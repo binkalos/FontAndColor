@@ -24,13 +24,13 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tlsMenu = New System.Windows.Forms.ToolStrip()
+        Me.tsbtnFont = New System.Windows.Forms.ToolStripButton()
+        Me.tsbtnColor = New System.Windows.Forms.ToolStripButton()
         Me.fontDlg = New System.Windows.Forms.FontDialog()
         Me.colorDlg = New System.Windows.Forms.ColorDialog()
         Me.rtbText = New System.Windows.Forms.RichTextBox()
-        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.tsbtnFont = New System.Windows.Forms.ToolStripButton()
-        Me.tsbtnColor = New System.Windows.Forms.ToolStripButton()
         Me.StatusStrip1.SuspendLayout()
         Me.tlsMenu.SuspendLayout()
         Me.SuspendLayout()
@@ -38,36 +38,27 @@ Partial Class Form1
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 191)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 217)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(329, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(314, 22)
         Me.StatusStrip1.SizingGrip = False
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'tlsMenu
-        '
-        Me.tlsMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbtnFont, Me.tsbtnColor})
-        Me.tlsMenu.Location = New System.Drawing.Point(0, 0)
-        Me.tlsMenu.Name = "tlsMenu"
-        Me.tlsMenu.Size = New System.Drawing.Size(329, 25)
-        Me.tlsMenu.TabIndex = 1
-        Me.tlsMenu.Text = "ToolStrip1"
-        '
-        'rtbText
-        '
-        Me.rtbText.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.rtbText.Location = New System.Drawing.Point(0, 25)
-        Me.rtbText.Name = "rtbText"
-        Me.rtbText.Size = New System.Drawing.Size(329, 166)
-        Me.rtbText.TabIndex = 2
-        Me.rtbText.Text = resources.GetString("rtbText.Text")
         '
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(136, 17)
         Me.ToolStripStatusLabel1.Text = "3112 이규빈 - 폰트변경"
+        '
+        'tlsMenu
+        '
+        Me.tlsMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbtnFont, Me.tsbtnColor})
+        Me.tlsMenu.Location = New System.Drawing.Point(0, 0)
+        Me.tlsMenu.Name = "tlsMenu"
+        Me.tlsMenu.Size = New System.Drawing.Size(314, 25)
+        Me.tlsMenu.TabIndex = 1
+        Me.tlsMenu.Text = "ToolStrip1"
         '
         'tsbtnFont
         '
@@ -87,11 +78,20 @@ Partial Class Form1
         Me.tsbtnColor.Size = New System.Drawing.Size(23, 22)
         Me.tsbtnColor.Text = "ToolStripButton2"
         '
+        'rtbText
+        '
+        Me.rtbText.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rtbText.Location = New System.Drawing.Point(0, 25)
+        Me.rtbText.Name = "rtbText"
+        Me.rtbText.Size = New System.Drawing.Size(314, 192)
+        Me.rtbText.TabIndex = 2
+        Me.rtbText.Text = resources.GetString("rtbText.Text")
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(329, 213)
+        Me.ClientSize = New System.Drawing.Size(314, 239)
         Me.Controls.Add(Me.rtbText)
         Me.Controls.Add(Me.tlsMenu)
         Me.Controls.Add(Me.StatusStrip1)
